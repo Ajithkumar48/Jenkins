@@ -1,4 +1,4 @@
-node('slaveNode1'){
+node('jenkins_slave'){
     stage('Build') {
         sh '''echo build steps'''
     }

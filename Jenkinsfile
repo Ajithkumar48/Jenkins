@@ -5,7 +5,7 @@ node("jenkins_slave") {
     try {
         stage ('Clone') {
         	sh "echo 'clone scripts'"
-		git clone https://github.com/Ajithkumar48/Jenkins.git
+		sh "git clone https://github.com/Ajithkumar48/Jenkins.git"
         }
         stage ('Build') {
         	sh "echo 'shell scripts to build project...'"

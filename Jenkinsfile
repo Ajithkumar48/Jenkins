@@ -1,5 +1,5 @@
 node{
-    stage "Vagrant Up"
-    git clone https://github.com/Ajithkumar48/Jenkins.git
-    Vagrant up
+    stage('Clone sources') {
+        git url: 'https://github.com/jfrogdev/project-examples.git'
+    }
 }

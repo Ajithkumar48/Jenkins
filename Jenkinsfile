@@ -1,4 +1,4 @@
-node {
+node("jenkins_slave") {
  	// Clean workspace before doing anything
     deleteDir()
 

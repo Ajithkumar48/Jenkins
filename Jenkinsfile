@@ -1,5 +1,5 @@
 node{
     stage "Vagrant Up"
-    cd C:/Users\ajith\Desktop\Vagrant
-    Vagrant up
+    sh "cd C:\Users\ajith\Desktop\Vagrant"
+    sh "Vagrant up"
 }

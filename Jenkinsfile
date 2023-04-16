@@ -4,7 +4,7 @@ node("jenkins_slave") {
 
     try {
         stage ('Clone') {
-        	checkout scm
+        	sh "echo 'clone scripts'"
         }
         stage ('Build') {
         	sh "echo 'shell scripts to build project...'"

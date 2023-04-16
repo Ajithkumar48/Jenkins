@@ -10,7 +10,7 @@ node("jenkins_slave") {
         }
         stage ('Build') {
         	sh "echo 'shell scripts to build project...'"
-		sh "sudo apt-get update"
+		sh "apt-get update"
 		sh "sudo apt-get install ca-certificates curl gnupg"
 		sh "sudo install -m 0755 -d /etc/apt/keyrings"
 		sh "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg"
